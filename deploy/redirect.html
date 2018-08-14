@@ -1,0 +1,37 @@
+<html>
+
+  <head>
+    <title>dyn.link</title>
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <script>
+      function update() {
+		// Parse the page name from the URL
+        var content = window.location.pathname;
+		content = content.substring(content.lastIndexOf("/") + 1);
+
+		// Read the redirect URL from the file corresponding to page name
+		var client = new XMLHttpRequest();
+		client.open('GET', 'links/' + content);
+		client.onreadystatechange = function() {
+			content = client.responseText;
+			if (content.startsWith("<html>")) { // No matching key found
+				content = "index.html";
+			}
+			document.getElementById("display").innerHTML = 'Redirecting you to: <a href="' + content + '">' + content + '</a>';
+			
+			// 1 ms delayed redirect
+			redirectTime = "1";
+			redirectURL = content;
+			setTimeout("location.href = redirectURL;",redirectTime);
+		}
+		client.send();
+      }
+    </script>
+  </head>
+
+  <body onload="update()">
+	<p id="display" style="font-size: 16pt"></p>
+  </body>
+
+</html>
