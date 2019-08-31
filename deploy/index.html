@@ -22,18 +22,18 @@
         transition-duration: 0.4s;
         cursor: pointer;
       }
-
+	  
       .button1 {
         background-color: white; 
         color: black; 
         border: 2px solid #4CAF50;
       }
-
+	  
       .button1:hover {
         background-color: #4CAF50;
         color: white;
       }
-
+	  
       input[type=text] {
         width: 100%;
         padding: 12px 20px;
@@ -42,11 +42,11 @@
 		border: 2px solid #ccc;
         outline: none;
       }
-
+	  
       input[type=text]:focus {
 		border: 2px solid #555;
       }
-
+	  
       div#box {
         width: 80%;
         max-width: 640px;
@@ -54,7 +54,7 @@
         padding: 20px;
         display: table;
       }
-
+	  
       p.topfill {
         padding-top: 5%;
       }
@@ -68,9 +68,29 @@
 		right: -10%;
 		/* background-color: #FFFFFF; */
 		text-align: center;
-	  }
-	  
+		
+	  }  
 	</style>
+	<script>
+      function createLink() {
+
+		var myURL = document.getElementById('createlink').value.trim();
+		
+		if (myURL.length > 0) {
+			document.getElementById("display").innerHTML = "Creating link for " + myURL;
+			var params = "createlink=" + myURL;
+			
+			var client = new XMLHttpRequest();
+			client.open('POST', 'https://s5xafkrz0i.execute-api.ap-northeast-1.amazonaws.com/prod/createlink');
+			client.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+			client.onreadystatechange = function() {
+				content = JSON.parse(this.responseText);
+				document.getElementById("display").innerHTML = "Link created: <a href=\"http://" + content.link + "\">" + content.link + "</a>";
+			}
+			client.send(params);
+		}
+      }
+    </script>
   </head>
   
   <body>
@@ -79,11 +99,10 @@
 		<div id="box">
 		  <h1>dyn.link</h1>
 		  <p>AWS powered, serverless URL shortening service.</p>
-	  	  <form action="https://s5xafkrz0i.execute-api.ap-northeast-1.amazonaws.com/prod/createlink" method="POST">
-		    <input type="text" id="createlink" name="createlink" placeholder="Enter URL ..."><br>
-		    <input type="submit" class="button button1" value="Create link">
-		  </form>
-		  <p>2018-08-14: Currently in Beta. Project info can be found <a href="https://github.com/heiskama/dynlink" class="active">here</a>.</p>
+		  <input type="text" id="createlink" name="createlink" placeholder="Enter URL ..."><br>
+		  <button type="button" class="button button1" onclick="createLink()">Create link</button>
+		  <p id="display" style="font-size: 16pt"></p>
+		  <p>2019-08-31: Currently in Beta. Project info can be found <a href="https://github.com/heiskama/dynlink" class="active">here</a>.</p>
 		</div>
 	</center>
 	
