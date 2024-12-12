@@ -1,3 +1,8 @@
+output "name" {
+  value       = var.function_name
+  description = "The name of the function."
+}
+
 output "arn" {
   value       = aws_lambda_function.lambda_function.arn
   description = "The Amazon Resource Name (ARN) of the function."

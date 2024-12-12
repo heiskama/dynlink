@@ -1,0 +1,84 @@
+{
+  "widgets": [
+      {
+        "type": "metric",
+        "x": 0,
+        "y": 0,
+        "width": 7,
+        "height": 7,
+        "properties": {
+            "metrics": [
+                [ "AWS/Lambda", "Invocations", "FunctionName", "${setlink-function-name}", { "region": "${region}" } ],
+                [ ".", "Errors", ".", ".", { "region": "${region}", "color": "#d62728" } ],
+                [ ".", "Throttles", ".", ".", { "region": "${region}", "color": "#ffbb78" } ]
+            ],
+            "view": "timeSeries",
+            "stacked": false,
+            "region": "${region}",
+            "period": 300,
+            "stat": "Sum",
+            "title": "setlink"
+        }
+      },
+      {
+          "type": "metric",
+          "x": 7,
+          "y": 0,
+          "width": 7,
+          "height": 7,
+          "properties": {
+              "metrics": [
+                  [ "AWS/Lambda", "Invocations", "FunctionName", "${getlink-function-name}", { "region": "${region}" } ],
+                  [ ".", "Errors", ".", ".", { "region": "${region}", "color": "#d62728" } ],
+                  [ ".", "Throttles", ".", ".", { "region": "${region}", "color": "#ffbb78" } ]
+              ],
+              "view": "timeSeries",
+              "stacked": false,
+              "region": "${region}",
+              "period": 300,
+              "stat": "Sum",
+              "title": "getlink"
+          }
+      },
+      {
+          "type": "metric",
+          "x": 0,
+          "y": 7,
+          "width": 7,
+          "height": 7,
+          "properties": {
+              "metrics": [
+                  [ "AWS/Lambda", "Invocations", "FunctionName", "${deletelink-function-name}", { "region": "${region}" } ],
+                  [ ".", "Errors", ".", ".", { "region": "${region}", "color": "#d62728" } ],
+                  [ ".", "Throttles", ".", ".", { "region": "${region}", "color": "#ffbb78" } ]
+              ],
+              "view": "timeSeries",
+              "stacked": false,
+              "region": "${region}",
+              "period": 300,
+              "stat": "Sum",
+              "title": "deletelink"
+          }
+      },
+      {
+          "type": "metric",
+          "x": 7,
+          "y": 7,
+          "width": 7,
+          "height": 7,
+          "properties": {
+              "metrics": [
+                  [ "AWS/DynamoDB", "ConsumedReadCapacityUnits", "TableName", "${links-table-name}" ],
+                  [ ".", "ConsumedWriteCapacityUnits", ".", ".", { "color": "#2ca02c" } ],
+                  [ ".", "TimeToLiveDeletedItemCount", ".", ".", { "color": "#8c564b" } ]
+              ],
+              "view": "timeSeries",
+              "stacked": false,
+              "region": "${region}",
+              "stat": "Sum",
+              "period": 300,
+              "title": "dynamodb"
+          }
+      }
+  ]
+}

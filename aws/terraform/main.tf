@@ -153,3 +153,16 @@ resource "aws_lambda_permission" "allow_cloudfront" {
   source_arn    = module.cloudfront.arn
   function_name = each.value
 }
+
+// Create a CloudWatch dashboard
+module "dashboard" {
+  source         = "./modules/cloudwatch_dashboard"
+  dashboard_name = "${var.project_name}-dashboard-${var.environment}"
+  config = {
+    region                   = var.region
+    setlink-function-name    = module.lambda_function_setlink.name
+    getlink-function-name    = module.lambda_function_getlink.name
+    deletelink-function-name = module.lambda_function_deletelink.name
+    links-table-name         = module.dynamodb.name
+  }
+}
