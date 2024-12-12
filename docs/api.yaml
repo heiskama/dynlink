@@ -1,0 +1,129 @@
+openapi: 3.0.3
+info:
+  title: dyn.link API
+  description: |-
+    `dyn.link` OpenAPI 3.0 specification. [Source code](https://github.com/heiskama/dynlink/)
+  #termsOfService: http://swagger.io/terms/
+  #contact:
+  #  email: apiteam@swagger.io
+  #license:
+  #  name: Apache 2.0
+  #  url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: "1.0.0"
+servers:
+  - url: https://dyn.link
+paths:
+  /:
+    get:
+      responses:
+        '200':
+          description: OK
+          content:
+            text/html:
+              schema:
+                type: string
+
+  /{param}:
+    get:
+      parameters:
+        - name: param
+          in: path
+          required: true
+          schema:
+            type: string
+            minLength: 1
+      responses:
+        '302':
+          description: Found
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
+
+  /api/setlink:
+    post:
+      parameters:
+        - in: header
+          name: x-amz-content-sha256
+          required: true
+          schema:
+            type: string
+            description: SHA256 hash of the body
+      requestBody:
+        required: true
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                  description: ID to be set
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /api/deletelink:
+    post:
+      security:
+        - apiKeyHeader: []
+      parameters:
+        - in: header
+          name: x-amz-content-sha256
+          required: true
+          schema:
+            type: string
+            description: SHA256 hash of the body
+      requestBody:
+        required: true
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                  description: ID to be deleted
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: object
+
+# API key for authorization
+components:
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      in: header
+      name: api-key

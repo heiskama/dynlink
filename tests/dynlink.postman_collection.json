@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "e7e80372-e7c2-499e-8c70-32cc993924dd",
+		"name": "dynlink",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "{{baseurl}}/",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test('Response has a Content-Type text/html header', function() {\r",
+							"  pm.response.to.have.header('Content-Type');\r",
+							"  // case-insensitive and rooted at the beginning of the string\r",
+							"  pm.expect(pm.response.headers.get('Content-Type')).match(/^text\\/html/i);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{baseurl}}/index.html",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test('Response has a Content-Type text/html header', function() {\r",
+							"  pm.response.to.have.header('Content-Type');\r",
+							"  // case-insensitive and rooted at the beginning of the string\r",
+							"  pm.expect(pm.response.headers.get('Content-Type')).match(/^text\\/html/i);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/index.html",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"index.html"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

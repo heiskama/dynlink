@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>dyn.link</title>
+    <!-- favicon.ico as base64 encoded data -->
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,
+      AAABAAMAEBAAAAEAIABoBAAANgAAACAgAAABACAAKBEAAJ4EAAAwMAAAAQAgAGgmAADGFQAAKAAAABAA
+      AAAgAAAAAQAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPf39//39/f/9/f3//f39//39/f/9/f3//X3
+      9//39/f/9/f3//f39//39/f/9/f0//f39v/39/f/9/f3//f39//39vf/9fb1//f39v/39/b/9/f3//X3
+      9//39/f/9/f3//b39//39/f/9/f3//f39//39/f/9/f3//X39//39vf/9/f3//b39//39/X/9/f3//f3
+      9//39/f/9/f3//f39v/39/f/9/T3//f19//39/f/9/X3//f39//39/b/9ff3//f39//09/f/9/f1//f2
+      9//39/f/9/f3//f19//29/X/9Pf3//f39v/39/f/9/f3//f39//39/f/9/f2//f19//39/f/9ff3//f3
+      9//39/f/9ff3//f39//d3d3/9/f3//f39//39/f/9/X3//f39//19/f/9/f3//f19//39/f/9/f3//f3
+      9//39/X/9/f3//f39//39/f/jo+P/3h4eP/39/X/9/f2//b39//29/f/9/X3//f39//39/f/9/f3//b3
+      9//z8/P/eXl5/3Fzcf97e3n/x8fH//f39/95e3n/zs7P//f39/+8vLz/Z2Zk/9LS0v9mZmb/ycjK//f3
+      9//39/f/qamo/6urqf/19fX/Tk5O//f39//19fX/YWNj/25ubv/39/f/9Pf3/25sbv/29/f/bm5s//b3
+      9//39/f/9/b3/6Wlpf+ysrL/9/f2/1RUVP/39/f/oaCg/7q6uv+IiIv/0tLS//X19/9HR0f/9/X3/21v
+      bf/39/f/9/X3//f39//x8PD/b29v/3JycP9NTU3/5OTm/1lZWf+0tLT/oKCg/21tb/+zs7P/dXd3/29u
+      bv+JiYn/9ff1//f39//39/f/9/f3//f39//S0NL/UVFR//f39//39/f/9/f3//f39f/39/f/9fX3//f3
+      9//19/f/9/f3//f39//39/X/9/b3//f39//39/f/5+Xn/9jY2P/39ff/9/f3//b29v/39/f/9/f3//f1
+      9//19/f/9/f3//f39//39/f/9/f3//f19f/39/f/9/f2//f39//39/b/9/f3//b39//39/b/9/f3//f3
+      9//39/f/9/f3//X39//39/f/9/f3//b39//39/f/9/f3//T39//39/f/9vf3//f39v/39ff/9/f2//f3
+      9//39fX/9/f3//f39//39/f/9/f3//f39//39Pf/9/f3//f39//19/X/9/f3//f39//29/f/9/f2//f3
+      9//39/f/9/f3//X39//39/f/9/f3//f39f/39/f/9/X3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//19/f/9vb3//f39v/39/X/9/f3//X39f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAACAAAABAAAAAAQAgAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAPf39//39/f/9/f3//f39//39/b/9/f3//f39v/39/f/9/f3//f3
+      9//19/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/b3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9f/39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/b3//f39//39/f/9/f3//f2
+      9//39/f/9/f3//f39f/39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//29/f/9/f3//f39//39/f/9/f1//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39v/39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/b3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/X/9/f3//f39//39/f/9/f3//f3
+      9v/39/f/9/f3//f39//39/f/9/X3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f1//f39//39vf/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39vf/9/f3//f39//39/f/9/f3//f1
+      9//39/f/9/f3//f39//39/X/9/b3//f39//39/f/9/f3//f39//39vf/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39vf/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//29/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f1
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3/7+/v//IyMj/9vb2//f39//39/f/9/f3//f19//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9ff3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/X3//f29//39/f/9/f3//f39//39/f/UlJS/wwMDP9HR0f/7+/v//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39vf/9/f3//f39v/39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//b3
+      9//19/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/6enp/zk5Of9ycnL/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//b39//39/f/9/f2//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//v7+//oKGh/4aGhv+/v7//7Ozs/6qrqv+9vb3/9/f3//f39//39/f/0tLS/wwM
+      DP/d3d3/9/f3//f39//39/f/9/f3/7CwsP+pqan/qqqq/+rq6v/b29v/qamp/6mpqf+/v7//9/f3//f3
+      9//39/f/9/f3//f39//39/X/6Ojo/ywsLP8pKSn/Wltb/yQkJP9FRUX/EBAQ/3BwcP/39/f/9/f3//f3
+      9//w8PD/FxcX/2xsbP/39/f/9/f3//f39//19fX/VFRU/wICAv9DQ0P/0tLS/7CwsP8zMzP/EhMS/3R0
+      dP/39/f/9/f3//f39//39/f/9vf3//f39/95eXn/NjY2//Ly8v/39/f/8PHx/zk5Of8zMzP/9/f3//f1
+      9//39/f/9/f3/42Pjf8uLi7/DQ0N/+Hh4f/39/f/9/f3//f39//39/f/BwcH/9fV1f/39/f/9/f3/6Oj
+      o/85OTn/9/f3//f39//39/f/9/f3//f39//39/f/9/f3/zw8PP+Pj4//9/f3//f39//39/f/m5ub/zMz
+      M//39/f/9/f3//f39v/u7u7/GBoY/7u7u/9aWlr/cnJy//f39//39/f/9/f3//f39/8HBwf/19bW//f3
+      9//39/f/o6Oj/zk5OP/39/f/9/f3//f39//39/X/9/f3//f39//29/f/OTk5/5SUlP/39/f/9/f3//f3
+      9/+goKD/MzMz//f39//39/f/9/f3/4mJif9DQED/9ff3/8/Pz/8ODg7/5OTk//f39//39/f/9/f3/wcH
+      B/+/v7//9/f3//f39/+kpKT/Ojo6//f39f/39/f/9/f3//f39//39/f/9/f3//f39/9sbGz/R0dH//b2
+      9v/39/f/9vb3/0xMTP8zMzP/9/f3//f39//s7Oz/FRUV/7y8vP/39ff/9/f3/1BQUP94eHj/9/f3//f3
+      9//39/f/BwcH/1FRUf/29vb/9/f3/5eXl/9AQED/9/f3//f39//39/f/9/f3//f39//39/f/9/b3/9zd
+      3f8YGBj/R0dH/35+fv9BQUH/JCYm/zMzM//39/f/zs7O/0xMTP8ODg7/cnJy/+rq6v/U1NT/TExM/w8O
+      Dv+Hh4f/5+fn/3Nzc/8DAwP/UlJS/z8/P/99fX3/Hh4e/4SEhP/39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3/+Dg4v98fn7/Y2Nj/56env+oqKr/MzMz//f39//W1tb/hoaG/4aGhv+IiIj/7e3t/9vb
+      2/+Hhob/hoaG/5qamv/q6ur/ioiI/4uLi//z8/P/nZ2d/2NjYP+QkJD/9PT0//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39f/39/f/9/f3/6mpqf80NDT/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f2//f39v/39/f/9/f3//f39//39/f/9/f3//b3
+      9v/39/f/9/f3//f39//39/f/9/X3//f39//39/f/9/f3//f39v9aWlr/MzMz/zQ0NP/39/f/9/f3//f3
+      9//39/f/9/b3//f39//39/f/9/f3//f39//39/f/9/f3//b39//39/f/9/f3//f39//19/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39f/39/f/9/f3/7m5uf+tra3/xcXF//f3
+      9//39/f/9/f3//f39//39/X/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f1
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f19//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f19//29/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f2
+      9//39/f/9/f3//f39//39/b/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//X39//19/f/9/f1//f39//39/f/9vf3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//X39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39v/19/f/9/f3//f39//39/f/9/f3//f39//19/f/9/f3//f2
+      9//39/f/9/f3//f39//39/f/9/X3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/b3//f3
+      9//39/f/9/f3//f39//39/f/9/X3//f39//39/f/9/f3//f39//39/f/9ff3//f39//39/f/9/f3//f3
+      9//39/f/9/X3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9f/39/f/9/X3//f39//39/f/9/f3//f39//29/f/9/f3//f39//39/f/9/f3//f39//39/X/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/b/9/f3//f39//39/f/9/f1//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/b/9/f3//f39//39ff/9/f3//f3
+      9//39/f/9/f3//f39//39/X/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//19/f/9/X3//f39//19/f/9/f3//X39//39/f/9/b3//f39//39/f/9/f3//f3
+      9//39/f/9/f2//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f29//39/f/9/f3//f39//39/f/9/f3//f39v8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAADAA
+      AABgAAAAAQAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPf39//39/f/9/f3//f39//39/f/9/f3//X3
+      9//39/f/9/f3//f39//39/f/9/f3//f29//39/f/9/X3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39v/19/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//X39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f2
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//X39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f29//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39f/39/f/9/f3//f39//39/f/9vf3//f3
+      9//39/f/9/f3//b39//39/f/9/f3//f39//39/f/9/f3//b39//39/f/9/f3//f39//39/f/9/f3//f3
+      9f/39/f/9/f3//f39v/39/f/9/f3//f39//39/f/9/X3//f39//39/f/9/f3//f39//39ff/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9vf3//f3
+      9//29/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39vf/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//29/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39vf/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f2//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39f/39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f29//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39ff/9/f3//f39//39/f/9/f3//f39//29/f/9/f3//f39//39ff/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9vf3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f29//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f2//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9f/39/f/9/f3//f39//39/f/9vf3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9vf3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f2//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39f/39/f/9/X3//f39//39/f/9/f3//f3
+      9//29/f/9/f3//f39//39ff/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//b39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39v/39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f29//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39ff/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39f/39/f/9/f3//X3
+      9//39/f/9/f3//f39//39/f/9ff3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/b/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//29/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f2//X39//39/f/9/f3//f39//39/f/9/b3//f39//39/f/9/f3//f3
+      9//39/f/9/f1//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/X/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//b39//39fX/9/f3/6+vr/+EhIT/ubm5//b29v/39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//b39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/X/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f29//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3/0ZGRv8MDAz/AAIC/0BA
+      QP/S09P/9vb2//f39//39/b/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3/8rK
+      yv+fn5//ampq/wwMDP9KSkr/5OTk//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39vf/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/7+/v/42Njf8HBwf/j4+P//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f2//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//b29v/o6en/1tbW/9HR0f/X19b/6urq//b2
+      9v/n5+f/3d3d/9/f3//x8fH/9/f3//f39//39/f/9/f3/+Tk5P9ERET/FRUV/+Xl5f/39/f/9/f3//f3
+      9//39/f/9/f3//f29//s7Oz/3t7c/93d3f/d3d3/3d3d//Dw8P/39/f/5+fn/93d3f/d3d3/3d3d/+Dg
+      4P/x8fH/9/f3//f39//19/f/9/f3//f39//39/f/9/f3//X39//39/f/9/f3/76+vv9UVFT/Gxsb/wkJ
+      Cf8bGxv/VlZW/7S0tP9ra2v/Li4u/zw8PP+6urr/9/f3//f39//39/f/9/f3//b29v+RkZH/CQkJ/3Z2
+      dv/29vb/9/f3//f39//39/f/9/f3//b29v+Xl5f/MjAw/y4uLv8uLi7/Ly8v/62trf/39/f/ampq/y4u
+      Lv8uLi7/Li4u/z4+Pv+/v7//9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/zs7O/xoa
+      Gv8MDAz/Y2Nj/5qamv9+fn7/Hh4e/xgYGP8XFxf/LS0t/4yMjP/a2tr/9/f3//f39//39/X/9/f3//Pz
+      8/95eXn/AwIC/yEhIf/R0dH/9/f3//f39//39/f/9/f3//f39//Gxsb/hISE/wcHB/8vLy//fHx8/9bW
+      1v/39/f/sLCw/3JycP8UFBT/MjIy/42Njf/d3d3/9/f3//f39//39/f/9/f3//f39//19vf/9/f3//f3
+      9//y8vL/RkZG/woKCv+SkpL/9PT0//f39//39/f/5ubm/zQ0NP8AAAD/VlZW//f39//39/f/9/f3//f3
+      9//39/f/9/f3/9fX1/8qKir/ICAg/wgICP+Dg4P/9PT0//f39//39/f/9/f3//f39//39/f/9/f3/wwM
+      DP9aWlr/7Ozs//b39//39/f/9/f3/9vb2/8oKCj/YGBg//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//Nzc3/HBwc/y0tLf/m5ub/9/f3//f39//39/f/9/f1/7q6uv8KCgr/VlZW//f3
+      9//39/f/9/f3//f39//39/f/9/f3/4GBgf8SEhL/tra2/zk5Of8zMzP/3t7e//f39//39/f/9/f3//f3
+      9//39/f/9/f3/wwMDP9aWlr/7Ozs//f39//39/f/9/f3/9vb2/8oKCj/YGBg//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39/+zs7P/ExMT/1VVVf/39/f/9/f3//f39v/39vf/9/f3/9ra
+      2v8mJib/VlZW//f39//39/f/9/f3//f39//39/f/3t7e/xAQEP9VVVX/6urq/7CwsP8ICAj/mJiY//f3
+      9//39/f/9/f3//f39//39/f/9/f3/wwMDP9aWlr/7Ozs//f39//39/f/9/f3/9vb2/8oKCj/YGBg//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//b39/+xsbH/EhIS/1tbW//39/b/9/f3//f3
+      9//39/f/9/f3/9zc3P8qKir/VlZW//f39//39/f/9/f3//f39//09PT/ZmZm/w8PD/+mp6f/9/f3/+Pj
+      4/9BQUH/ISEh/+zs7P/39/f/9/f3//f39//39/f/9/f3/wwMDf9NTU3/5+fn//f39//39/f/9/f3/9vb
+      2/8oKCn/YWFh//f39//39/f/9/f3//f39//39/f/9/f3//f19//39/f/9/f3//f39//Gxsb/GRkZ/zU1
+      Nf/u7u7/9/f3//f39//39/f/9/f3/8jIyP8PDw//VlZW//f39//39/f/9/f3//f39//ExMT/Ghoa/0FB
+      Qf/p6en/9/f3//X19f+QkJD/CQkJ/4iIiP/39/f/9/f3//f39//39/f/9/f3/wwODP8fHx//0dHR//f3
+      9v/39/f/9/f3/9vb2/8nJyf/YWFh//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//t7ez/MzMz/xEREf+srKz/9/f3//f39//39/f/9vb2/1VVVf8AAAD/VlZW//f39//39/f/9/f3//Hx
+      8f9xcXH/AwMD/7i4uP/39/f/9/b3//f39//d3d3/JiQk/ycnJ//b29v/9fX3//f39//39/f/9/f3/wwM
+      DP8CAgL/VlZW//T09P/39/f/9/f3/9TU1P8UFBT/cHFx//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/r6+v/w4ODv8hISH/mpqa/8/Pz/+3t7f/SUlJ/wwMDP8ICAj/VlZW//f3
+      9//39/f/39/f/6enp/8gICD/KCgo/7y8vP/Y2Nj/9fX1//Pz8//Nzc3/VlZW/wgICP92dnb/0tLS//X1
+      9f/X19f/vr6+/woKCv8qKir/FxcX/0VFRf+3t7f/ysrK/1RUVP8HBwf/sLCw//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3/5ycnP8wMDD/AwMD/wUFBf8FBQX/NTU1/4+P
+      j/8sLCz/VlZW//f39//39/f/fn5+/wsLC/8LCwv/CwsL/wwMDP9ra2v/7+/v/+Li4v9CQkL/CwsL/wsJ
+      C/8LCwv/S0tL/+3t7f9mZmf/DAwM/w0NDf95eXn/o6Oj/zU1Nf8GBgb/AwMD/wkJCf9mZmb/6Ojo//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//T09P/e3t7/u7u7/6Gh
+      of+7u7v/39/f/9zc3P8uLi7/VlZW//f39//39/f/5eXl/9HR0f/R0dH/0dHR/9HT0f/h4eD/9vb2//T0
+      9P/b29v/0dHR/9HR0f/R0dH/3Nzc//b29v/g4OD/0dHR/9LS0v/l5eX/9vb2/9/f3/+6urr/o6Oj/8bG
+      xv/p6ej/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/b3/93d3f8uLi7/VlZW//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/b/9/f3//f39//39vf/9/f3//f3
+      9//39/f/9/f3//f39//19/f/9/f3//f39//39/f/9/f3//f39//39/f/9/b3//f39//19/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//o6Oj/ycnJ/7Gxsf8lJSX/V1dX//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9vf3//f39//39/b/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//X39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39/+Wlpb/Hh4e/xYWFv8FBQX/V1dX//f3
+      9//19/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/b3//f29//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9vf3//f39//Nzc3/g4OD/319
+      ff99fX3/vb29//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/X3//f39//29/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f1//f39//39/f/9/f3//f39//29/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f1//f39//39vf/9/f3//f39//39/f/9/X3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f2//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//29/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9ff3//f39//39/f/9vf3//f39//19/f/9/f3//f39//39/f/9/f3//f3
+      9//29/f/9/f3//f39//39/f/9/f3//f39//39/f/9vf3//f39//39/f/9/f3//f39//39/f/9vf3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/b3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//b39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39vf/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39ff/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9ff3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//19vf/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/b/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//19/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f2//X39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9ff3//f39v/39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f2//f39//39/f/9/f3//f39//39/f/9/f3//b3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39vf/9/f3//f39//39/f/9/X3//f39//39/f/9/f3//f39//39ff/9/f3//f39//39vf/9/f3//f2
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39f/39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39vf/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//X39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9vf3//f39//39/f/9/f3//f39f/39/f/9/f3//f3
+      9//39/f/9/f2//f39//39/f/9/f3//f39//39/f/9/f1//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f1//f39//39/f/9vf3//f39f/39/f/9/f3//f39f/39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39ff/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39v/39/f/9/f3//f39f/19/f/9/f3//f39//39/f/9ff3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//29/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/b3//f3
+      9//39/f/9vf3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//19/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39f/39/f/9/f3//f39//39/f/9/X3//f3
+      9//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f3
+      9//39/f/9/f3/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    "/>
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+    <meta charset="UTF-8">
+
+    <style>
+      body {
+        background-color: #F7F7F7;
+      }
+
+      .button {
+        padding: 12px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 0px 0px;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+
+      .button1 {
+        background-color: white;
+        color: black;
+        border: 2px solid #4CAF50;
+      }
+
+      .button1:hover {
+        background-color: #4CAF50;
+        color: white;
+      }
+
+      input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        outline: none;
+      }
+
+      input[type=text]:focus {
+        border: 2px solid #555;
+      }
+
+      div#box {
+        width: 80%;
+        max-width: 640px;
+        border-radius: 5px;
+        padding: 20px;
+        display: table;
+      }
+
+      p.topfill {
+        padding-top: 5%;
+      }
+
+      .bottombar {
+        bottom: 0;
+        position: fixed;
+        overflow: auto;
+        width: 80%;
+        left: 10%;
+        right: -10%;
+        /* background-color: #FFFFFF; */
+        text-align: center;
+      }
+    </style>
+
+    <script>
+      function init() {
+        // Trigger a button click on Enter
+        var input = document.getElementById("createlink");
+        input.addEventListener("keypress", function(event) {
+          if (event.key === "Enter") {
+            //event.preventDefault();
+            document.getElementById("create_button").click();
+          }
+        });
+      }
+
+      // Calculate payload hash
+      async function sha256(message) {
+        var msgBuffer = new TextEncoder('utf-8').encode(message);                      // encode as UTF-8
+        var hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);             // hash the message
+        var hashArray = Array.from(new Uint8Array(hashBuffer));                        // convert ArrayBuffer to Array
+        var hashHex = hashArray.map(b => ('00' + b.toString(16)).slice(-2)).join('');  // convert bytes to hex string
+        return hashHex;
+      }
+
+      // Create link with API
+      async function createLink() {
+        var api = 'https://dyn.link/api/setlink';
+        var myURL = document.getElementById('createlink').value.trim();
+
+        if (myURL.length > 0) {
+          document.getElementById("display").innerHTML = "Creating link for " + myURL;
+          var params = "url=" + myURL;
+          var hash = await sha256(params);
+          var client = new XMLHttpRequest();
+          client.open('POST', api);
+          client.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+          client.setRequestHeader('x-amz-content-sha256', hash);  // Required for Lambda URL POST requests
+          client.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              try {
+                var response = JSON.parse(this.responseText);
+                var display = 'Link created: <a href="{{shortUrl}}"><div id="link">{{shortUrl}}</div></a> <button onclick="{{function}}">Copy</button>'.replaceAll("{{shortUrl}}", response.short_url).replace("{{function}}", "copyText('link')");
+                document.getElementById("display").innerHTML = display;
+                document.getElementById("notice").innerHTML = "Links will expire in 30 days.";
+              } catch (err) {
+                console.log(err)
+              }
+            }
+          }
+          client.send(params);
+        }
+      }
+
+      // Copy link to clipboard
+      async function copyText(elementId) {
+          var text = document.getElementById(elementId).innerHTML;
+          try {
+            await navigator.clipboard.writeText(text);
+            console.log('Content copied to clipboard');
+          } catch (err) {
+            console.error('Failed to copy: ', err);
+          }
+      }
+    </script>
+  </head>
+
+  <body onload="init()">
+    <center>
+      <p class="topfill"></p>
+      <div id="box">
+        <h1>dyn.link</h1>
+        <p>Deploy your own URL shortener on AWS with Terraform. See project <a href="https://github.com/heiskama/dynlink" class="active">repo</a>.</p>
+        <input type="text" id="createlink" name="createlink" placeholder="Enter URL ..."></br>
+        <button type="button" id="create_button" class="button button1" onclick="createLink()">Create link</button></br>
+        <p id="display" style="font-size: 16pt"></p>
+        <p id="notice"></p>
+      </div>
+    </center>
+  </body>
+
+</html>
